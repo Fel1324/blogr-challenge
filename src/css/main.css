@@ -153,3 +153,63 @@
     width: 100%;
 }
 /* END ADVANTAGES */
+
+/* START FOOTER */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 40px;
+    background-color: var(--darker-black-blue);
+    border-top-right-radius: 100px;
+}
+
+.footer__title{
+    font-family: var(--title-font);
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer__subtitle{
+    color: var(--white);
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+
+.footer__links{
+    list-style: none;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.footer__links > *:not(:last-of-type){
+    margin-bottom: 8px;
+}
+
+.footer__link-item{
+    text-decoration: none;
+    color: var(--greyish-blue);
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.footer__link-item:hover{
+    text-decoration: underline;
+}
+
+.footer__link-item:focus{
+    outline: 1px solid var(--white);
+}
+
+.footer__link-item:focus{
+    opacity: 0.5;
+}
+
+:is(.footer__title, .footer__subtitle, .footer__link-item)::selection{
+    background-color: var(--light-red);
+}
+/* END FOOTER */
