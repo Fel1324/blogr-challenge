@@ -6,6 +6,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     /* Primary colors */
     --light-red: rgb(255, 82, 93);
