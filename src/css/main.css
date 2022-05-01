@@ -1,6 +1,8 @@
 .header{
-    background-image: linear-gradient(to right bottom, var(--gradient-light-red), var(--gradient-red));
-    height: 80vh;
+    background: url("../assets/images/bg-pattern-intro-mobile.svg") no-repeat center center, 
+    linear-gradient(to right bottom, var(--gradient-light-red), var(--gradient-red));
+    height: max(80vh, 570px);
+    border-bottom-left-radius: 100px;
 }
 
 .header__navbar{
