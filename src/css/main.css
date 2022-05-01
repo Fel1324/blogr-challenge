@@ -109,5 +109,47 @@
 .introduction__illustration{
     width: 100%;
 }
-
 /* END INTRODUCTION */
+
+/* START INFRA */
+.infra{
+    margin-top: 156px;
+    width: 100%;
+    background: url(../assets/images/bg-pattern-circles.svg) no-repeat bottom, linear-gradient(to right bottom, var(--gradient-dark-blue), var(--gradient-blue));
+    padding: 120px 24px 64px;
+    border-radius: 0px 100px 0px 100px;
+    position: relative;
+}
+
+.infra__phones{
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.infra__title{
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-top: 96px;
+}
+
+.infra__text{
+    color: var(--white);
+}
+/* END INFRA */
+
+/* START ADVANTAGES*/
+.advantages{
+    margin-top: 48px;
+}
+
+.advantages > *{
+    margin-bottom: 32px;
+}
+
+.advantages__laptop{
+    width: 100%;
+}
+/* END ADVANTAGES */
