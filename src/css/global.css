@@ -37,6 +37,11 @@ html{
     --body-font: 'Overpass', var(--font-fallback);
 }
 
+::selection{
+    background-color: var(--darker-black-blue);
+    color: var(--white);
+}
+
 .wrapper{
     padding: 16px 16px 0px;
 }
