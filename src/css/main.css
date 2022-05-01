@@ -1,0 +1,91 @@
+.header{
+    background-image: linear-gradient(to right bottom, var(--gradient-light-red), var(--gradient-red));
+    height: 80vh;
+}
+
+.header__navbar{
+    padding: 48px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__trigger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: box-shadow 300ms;
+}
+
+.navbar__trigger:focus{
+    outline: none;
+    box-shadow: var(--focus-shadow)
+}
+
+.header__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100% - 88px);
+}
+
+.header__title{
+    font-family: 'Ubuntu';
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.header__description{
+    font-family: 'Overpass';
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 24px 0px;
+}
+
+.header__row{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.header__link{
+    font-family: 'Ubuntu';
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid var(--white);
+    display: inline-block;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.header__link:hover{
+    filter: brightness(85%);
+}
+
+.header__link:focus{
+    outline: none;
+    box-shadow: var(--focus-shadow)
+}
+
+.header__link:active{
+    opacity: 0.5;
+}
+
+.header__link--start{
+    background-color: var(--white);
+    color: var(--light-red);
+}
+
+.header__link--learn{
+    color: var(--white);
+}

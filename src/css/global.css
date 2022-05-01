@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    /* Primary colors */
+    --light-red: rgb(255, 82, 93);
+    --lighter-red: rgb(255, 122, 133);
+    --darker-blue: rgb(31, 63, 91);
+
+    /* Neutral */
+    --white: rgb(255, 255, 255);
+    --greyish-blue: rgb(200, 200, 203);
+    --darker-greyish-blue: rgb(75, 88, 98);
+    --darker-black-blue: rgb(37, 37, 45);
+
+    /* Gradient */
+    --gradient-light-red: rgb(255, 143, 112);
+    --gradient-red: rgb(255, 61, 84);
+    --gradient-dark-blue: rgb(44, 45, 63);
+    --gradient-blue: hsl(237, 23%, 32%); 
+
+    /* Shadow */
+    --focus-shadow: 0 0 0 3px var(--darker-blue);
+}
