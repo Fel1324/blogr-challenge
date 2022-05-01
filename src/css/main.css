@@ -36,7 +36,7 @@
 }
 
 .header__title{
-    font-family: 'Ubuntu';
+    font-family: var(--title-font);
     color: var(--white);
     font-size: 2rem;
     text-align: center;
@@ -44,7 +44,7 @@
 }
 
 .header__description{
-    font-family: 'Overpass';
+    font-family: var(--body-font);
     color: var(--white);
     font-weight: 300;
     font-size: 1.2rem;
@@ -59,7 +59,7 @@
 }
 
 .header__link{
-    font-family: 'Ubuntu';
+    font-family: var(--title-font);
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 700;
