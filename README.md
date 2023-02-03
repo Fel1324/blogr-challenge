@@ -34,7 +34,7 @@ Clique [aqui](https://fel1324.github.io/blogr-challenge/) para acessar o projeto
 
 <p align="justify">
     O Blogr é uma plataforma de publicação moderna. Esse projeto serve para os usuários aumentarem seu público e construírem sua marca online. O Blogr apresenta uma interface extremamente intuitiva que permite que você se concentre em uma coisa: criar conteúdo. O gerenciamento de conteúdo flexível permite que os usuários se movam facilmente pelas postagens. Aumente a usabilidade do seu blog adicionando categorias, seções, formato ou fluxo personalizados. Infraestrutura de última geração
-    com confiabilidade e velocidade 
+    com confiabilidade e velocidade.
 </p>
 
 <br>
