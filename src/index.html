@@ -15,12 +15,16 @@
     </head>
     <body>
         <header class="header">
-            <nav class="header__navbar">
+            <nav class="header__navbar--mobile">
                 <img src="./assets/images/logo.svg" alt="Logo Blogr">
 
-            <button type="button" class="navbar__trigger">
-                <img src="./assets/images/icon-hamburger.svg" alt="Open Menu">
-            </button>
+                <button onclick="openMenu()" type="button" class="navbar__trigger">
+                    <img src="./assets/images/icon-hamburger.svg" alt="Open Menu">
+                </button>
+            </nav>
+
+            <nav class="header__navbar--desktop">
+
             </nav>
 
             <div class="header__content">
@@ -34,9 +38,66 @@
             </div>
         </header>  
 
+        <aside class="menu-lateral">
+            <header class="menu-lateral__header">
+                <img src="./assets/images/logo.svg" alt="Logo Blogr">
+
+                <button onclick="closeMenu()" type="button" class="menu-lateral__trigger">
+                    <img src="./assets/images/icon-close.svg" alt="Close Menu">
+                </button>
+            </header>
+
+            <main class="menu-lateral__content">
+                <nav class="menu-lateral__navbar">
+                    <ul class="menu-lateral__lista">
+                        <li class="menu-lateral__item">
+                            <button class="menu-lateral__button" aria-label="Open products">
+                                Product
+                                <span><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                            </button>
+                        </li>
+
+                        <li class="menu-lateral__item">
+                            <button class="menu-lateral__button" aria-label="Open products">
+                                Company
+                                <span><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                            </button>
+                        </li>
+
+                        <li class="menu-lateral__item">
+                            <button onclick="openThirdList()" class="menu-lateral__button" aria-label="Open products">
+                                Connect
+                                <span class="menu-lateral__arrow"><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                            </button>
+
+                            <ul class="navbar__third-list">
+                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">Contact</a></li>
+                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">Newsletter</a></li>
+                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">LinkedIn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <hr>
+
+                <div class="menu-lateral__login">
+                    <ul class="menu-lateral__lista">
+                        <li class="menu-lateral__item">
+                            <a class="menu-lateral__link" href="#!">Login</a>
+                        </li>
+
+                        <li class="menu-lateral__item">
+                            <a class="menu-lateral__sign-up" href="#!">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </aside>
+
         <main>
             <section id="introduction" class="introduction">
-                <h2 class="title">Designed for the future</h2>
+                <h2 class="title introduction__title">Designed for the future</h2>
                 <img class="introduction__illustration" src="./assets/images/illustration-editor-mobile.svg" alt="">
 
                 <article class="wrapper">
@@ -69,8 +130,9 @@
                 </article>
             </section>
 
+            <div class="infra__phones"></div>
+
             <section class="infra">
-                <img class="infra__phones" src="./assets/images/illustration-phones.svg" alt="">
                 <h2 class="title infra__title">State of the Art Infrastructure</h2>
                     
                 <p class="body-text infra__text">
@@ -84,7 +146,7 @@
             </section>
 
             <section class="advantages">
-                <img src="./assets/images/illustration-laptop-mobile.svg" alt="" class="advantages__laptop">´
+                <img class="advantages__laptop" src="./assets/images/illustration-laptop-mobile.svg" alt="">
 
                 <article class="wrapper">
                     <h2 class="title">Free, open, simple</h2>
@@ -146,5 +208,7 @@
                 <li><a href="#!" class="footer__link-item">LinkedIn</a></li>
             </ul>
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -8,6 +9,10 @@
 
 html{
     scroll-behavior: smooth;
+}
+
+html, body{
+    font-family: var(--body-font);
 }
 
 :root{
@@ -37,6 +42,15 @@ html{
     --body-font: 'Overpass', var(--font-fallback);
 }
 
+button{
+    background: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 ::selection{
     background-color: var(--darker-black-blue);
     color: var(--white);
@@ -63,4 +77,17 @@ html{
     text-align: center;
     line-height: 1.7;
     max-width: 80ch;
+}
+
+/* BUTTON OPEN E CLOSE MENU */
+.navbar__trigger, .menu-lateral__trigger{
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: box-shadow 300ms;
+}
+
+.navbar__trigger:focus, .menu-lateral__trigger:focus{
+    outline: none;
+    box-shadow: var(--focus-shadow)
 }
