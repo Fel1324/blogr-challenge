@@ -45,6 +45,7 @@ html, body{
 button{
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 a{

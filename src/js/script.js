@@ -4,6 +4,7 @@ function openMenu(){
     document.body.style.overflow = "hidden";
     document.body.querySelector('nav.header__navbar--mobile').style.display = "none";
     document.body.querySelector('div.header__content').style.display = "none";
+    document.body.querySelector('div#overlay').classList.add('background-black');
 }
 
 function closeMenu(){
@@ -12,6 +13,7 @@ function closeMenu(){
     document.body.querySelector('nav.header__navbar--mobile').style.display = "flex";
     document.body.querySelector('div.header__content').style.display = "flex";
     document.querySelector('ul.navbar__third-list').classList.remove('third-list--open');
+    document.querySelector('div#overlay').classList.remove('background-black');
 }
 
 // TERCEIRO ITEM DO MENU LATERAL
