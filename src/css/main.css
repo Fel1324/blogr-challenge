@@ -50,7 +50,6 @@
 
 .header__link{
     font-family: var(--title-font);
-    text-decoration: none;
     font-size: 1.25rem;
     font-weight: 700;
     padding: 16px;
@@ -169,11 +168,6 @@ hr{
     font-weight: 700;
     font-size: 1.2rem;
     margin-top: 24px;
-    transition: filter 250ms;
-}
-
-.menu-lateral__sign-up:hover{
-    filter: saturate(1.8);
 }
 
 .navbar__third-list{
@@ -226,6 +220,14 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.introduction > *{
+    margin-bottom: 32px;
+}
+
+.introduction article:last-child{
+    margin-bottom: 0;
 }
 
 .introduction__title{
@@ -343,3 +345,66 @@ hr{
     background-color: var(--light-red);
 }
 /* END FOOTER */
+
+/* START MEDIAS QUERYS */
+@media screen and (min-width: 1024px) {
+    .header{
+        background: url("../assets/images/bg-pattern-intro-desktop.svg") no-repeat center center, 
+        linear-gradient(to right bottom, var(--gradient-light-red), var(--gradient-red));
+    }
+
+    .header__navbar--mobile, .menu-lateral{
+        display: none;
+    }
+
+    .header__navbar--desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 54px 0px;
+        max-width: 1440px;
+        margin-inline: auto;
+    }    
+
+    .navbar-desktop__lista{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        column-gap: 34px;
+    }
+
+    .navbar-desktop__lista img{
+        margin-right: 24px;
+    }
+
+    .navbar-desktop__button{
+        color: var(--white);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1rem;
+    }
+
+    .navbar-desktop__link{
+        color: var(--white);
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .navbar-desktop__sign-up{
+        display: inline-block;
+        color: var(--light-red);
+        font-family: var(--title-font);
+        background: var(--white);
+        padding-block: .75rem;
+        padding-inline: 2rem;
+        border-radius: 50px;
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .header__title {
+        font-size: 3.4rem;
+    }
+}
