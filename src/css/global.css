@@ -13,6 +13,7 @@ html{
 
 html, body{
     font-family: var(--body-font);
+    overflow-x: hidden
 }
 
 :root{
@@ -81,6 +82,7 @@ a{
     text-align: center;
     line-height: 1.7;
     max-width: 80ch;
+    margin-inline: auto;
 }
 
 /* BUTTON OPEN E CLOSE MENU */
@@ -94,4 +96,21 @@ a{
 .navbar__trigger:focus, .menu-lateral__trigger:focus{
     outline: none;
     box-shadow: var(--focus-shadow)
+}
+
+@media screen and (min-width: 1124px) {
+    .wrapper{
+        width: 100%;
+        padding-left: 3.8rem;
+    }
+
+    .title{
+        text-align: left;
+    }
+
+    .body-text{
+        text-align: left;
+        font-size: 1.10rem;
+        margin-inline: 0;
+    }
 }

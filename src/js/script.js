@@ -14,6 +14,7 @@ function closeMenu(){
     document.body.querySelector('div.header__content').style.display = "flex";
     document.querySelector('ul.navbar__third-list').classList.remove('third-list--open');
     document.querySelector('div#overlay').classList.remove('background-black');
+    document.querySelector('span.menu-lateral__arrow').classList.remove('rotate');
 }
 
 // TERCEIRO ITEM DO MENU LATERAL
