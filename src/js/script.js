@@ -17,9 +17,14 @@ function closeMenu(){
     document.querySelector('span.menu-lateral__arrow').classList.remove('rotate');
 }
 
-// TERCEIRO ITEM DO MENU LATERAL
+// LISTAS MOBILES
 function openThirdList(){
     document.querySelector('ul.navbar__third-list').classList.toggle('third-list--open');
     document.querySelector('span.menu-lateral__arrow').classList.toggle('rotate');
 }
 
+// LISTAS DESKTOP
+function openThirdListDesktop(){
+    document.querySelector('ul.navbar__third-list--desktop').classList.toggle('third-list-desktop-open');
+    document.querySelector('span.navbar-desktop__arrow').classList.toggle('rotate');
+}

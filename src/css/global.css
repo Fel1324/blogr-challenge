@@ -30,6 +30,7 @@ html, body{
 
     /* Neutral */
     --white: rgb(255, 255, 255);
+    --black: rgb(0,0,0);
     --greyish-blue: rgb(200, 200, 203);
     --darker-greyish-blue: rgb(75, 88, 98);
     --darker-black-blue: rgb(37, 37, 45);
@@ -91,6 +92,10 @@ a{
     margin-inline: auto;
 }
 
+.rotate{
+    transform: rotate(180deg);
+}
+
 /* BUTTON OPEN E CLOSE MENU */
 .navbar__trigger, .menu-lateral__trigger{
     cursor: pointer;
@@ -104,9 +109,17 @@ a{
     box-shadow: var(--focus-shadow)
 }
 
+/* HOVER DOS BOTÕES DO HEADER */
+.header__link--start:hover, 
+.navbar-desktop__sign-up:hover{
+    color: var(--white);
+    background-color: var(--lighter-red);
+    border: none;
+}
+
 @media screen and (min-width: 1124px) {
     .wrapper{
-        width: 85%;
+        width: 100%;
     }
 
     .title{

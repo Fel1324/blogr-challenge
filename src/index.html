@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/main.css">
     </head>
@@ -26,28 +26,34 @@
             <nav class="header__navbar--desktop">
                 <ul class="navbar-desktop__lista">
                     <li>
-                        <img src="./assets/images/logo.svg" alt="Logo Blogr">
+                        <img class="navbar-desktop__logo" src="./assets/images/logo.svg" alt="Logo Blogr">
                     </li>
 
                     <li class="navbar-desktop__item">
-                        <button class="navbar-desktop__button">
+                        <button class="navbar-desktop__button" aria-label="Open Product">
                             Product
                             <span><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
                     </li>
 
                     <li class="navbar-desktop__item">
-                        <button class="navbar-desktop__button">
+                        <button class="navbar-desktop__button" aria-label="Open Company">
                             Company
                             <span><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
                     </li>
 
                     <li class="navbar-desktop__item">
-                        <button class="navbar-desktop__button" aria-label="Open Connect">
+                        <button class="navbar-desktop__button" aria-label="Open Connect" onclick="openThirdListDesktop()">
                             Connect
-                            <span><img src="assets/images/icon-arrow-light.svg" alt=""></span>
+                            <span class="navbar-desktop__arrow"><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
+
+                        <ul class="navbar__third-list--desktop">
+                            <li class="navbar-desktop__third-item"><a href="#" class="navbar-desktop__third-link">Contact</a></li>
+                            <li class="navbar-desktop__third-item"><a href="#" class="navbar-desktop__third-link">Newsletter</a></li>
+                            <li class="navbar-desktop__third-item"><a href="#" class="navbar-desktop__third-link">LinkedIn</a></li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -108,9 +114,9 @@
                             </button>
 
                             <ul class="navbar__third-list">
-                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">Contact</a></li>
-                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">Newsletter</a></li>
-                                <li class="navbar__third-item"><a href="#" class="navbar__thirdlink">LinkedIn</a></li>
+                                <li class="navbar__third-item"><a href="#" class="navbar__third-link">Contact</a></li>
+                                <li class="navbar__third-item"><a href="#" class="navbar__third-link">Newsletter</a></li>
+                                <li class="navbar__third-item"><a href="#" class="navbar__third-link">LinkedIn</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -142,34 +148,36 @@
                         <img src="./assets/images/illustration-editor-mobile.svg" alt="">
                     </picture>
     
-                    <article class="wrapper">
-                        <h3 class="title">Introducing an extensible editor</h3>
-                         
-                        <p class="body-text">
-                            Blogr features an exceedingly intuitive
-                            interface which lets you focus on one
-                            thing: creating content. The editor
-                            supports management of multiple blogs
-                            and allows easy manipulation of embeds
-                            such as images, videos, and Markdown.
-                            Extensibility with plugins and themes
-                            provide easy ways to add functionality or
-                            change the looks of a blog.
-                        </p>
-                    </article>
-    
-                    <article class="wrapper">
-                        <h3 class="title">Robust content management</h3>
-                            
-                        <p class="body-text">
-                            Flexible content management enables
-                            users to easily move through posts.
-                            Increase the usability of your blog by
-                            adding customized categories, sections,
-                            format, or flow. With this functionality,
-                            you're in full control.
-                        </p>
-                    </article>
+                    <div class="introduction__articles">
+                        <article class="wrapper">
+                            <h3 class="title">Introducing an extensible editor</h3>
+                             
+                            <p class="body-text">
+                                Blogr features an exceedingly intuitive
+                                interface which lets you focus on one
+                                thing: creating content. The editor
+                                supports management of multiple blogs
+                                and allows easy manipulation of embeds
+                                such as images, videos, and Markdown.
+                                Extensibility with plugins and themes
+                                provide easy ways to add functionality or
+                                change the looks of a blog.
+                            </p>
+                        </article>
+        
+                        <article class="wrapper">
+                            <h3 class="title">Robust content management</h3>
+                                
+                            <p class="body-text">
+                                Flexible content management enables
+                                users to easily move through posts.
+                                Increase the usability of your blog by
+                                adding customized categories, sections,
+                                format, or flow. With this functionality,
+                                you're in full control.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -199,66 +207,67 @@
                         <img src="./assets/images/illustration-laptop-mobile.svg" alt="">
                     </picture>
     
-                    <article class="wrapper">
-                        <h2 class="title">Free, open, simple</h2>
-                            
-                        <p class="body-text">
-                            Blogr is a free and open source
-                            application backed by a large community
-                            of helpful developers. It supports features
-                            such as code syntax highlighting, RSS
-                            feeds, social media integration, third-
-                            party commenting tools, and works.
-                            seamlessly with Google Analytics. The
-                            architecture is clean and is relatively easy
-                            to learn.
-                        </p>
-                    </article>
-    
-                    <article class="wrapper">
-                        <h2 class="title">Powerful tooling</h2>
-                            
-                        <p class="body-text">
-                            Batteries included. We built a simple and
-                            straightforward CLI tool that makes
-                            customization and deployment a breeze,
-                            but capable of producing even the most
-                            complicated sites.
-                        </p>
-                    </article>
+                    <div class="advantages__articles">
+                        <article class="wrapper">
+                            <h2 class="title">Free, open, simple</h2>
+                                
+                            <p class="body-text">
+                                Blogr is a free and open source
+                                application backed by a large community
+                                of helpful developers. It supports features
+                                such as code syntax highlighting, RSS
+                                feeds, social media integration, third-
+                                party commenting tools, and works.
+                                seamlessly with Google Analytics. The
+                                architecture is clean and is relatively easy
+                                to learn.
+                            </p>
+                        </article>
+        
+                        <article class="wrapper">
+                            <h2 class="title">Powerful tooling</h2>
+                                
+                            <p class="body-text">
+                                Batteries included. We built a simple and
+                                straightforward CLI tool that makes
+                                customization and deployment a breeze,
+                                but capable of producing even the most
+                                complicated sites.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <h2 class="footer__title">Blogr</h2>
-            
-            <h3 class="footer__subtitle">Product</h3>
-
-            <ul class="footer__links">
-                <li><a href="#!" class="footer__link-item">Overview</a></li>
-                <li><a href="#!" class="footer__link-item">Pricing</a></li>
-                <li><a href="#!" class="footer__link-item">Marketplace</a></li>
-                <li><a href="#!" class="footer__link-item">Features</a></li>
-                <li><a href="#!" class="footer__link-item">Integrations</a></li>
-            </ul>
-
-            <h3 class="footer__subtitle">Company</h3>
-
-            <ul class="footer__links">
-                <li><a href="#!" class="footer__link-item">About</a></li>
-                <li><a href="#!" class="footer__link-item">Team</a></li>
-                <li><a href="#!" class="footer__link-item">Blog</a></li>
-                <li><a href="#!" class="footer__link-item">Careers</a></li>
-            </ul>
-
-            <h3 class="footer__subtitle">Connect</h3>
-
-            <ul class="footer__links">
-                <li><a href="#!" class="footer__link-item">Contact</a></li>
-                <li><a href="#!" class="footer__link-item">Newsletter</a></li>
-                <li><a href="#!" class="footer__link-item">LinkedIn</a></li>
-            </ul>
+            <div class="footer__content">
+                <h2 class="footer__title">Blogr</h2>
+                
+                <ul class="footer__links">
+                    <li><h3 class="footer__subtitle">Product</h3></li>
+                    <li><a href="#!" class="footer__link-item">Overview</a></li>
+                    <li><a href="#!" class="footer__link-item">Pricing</a></li>
+                    <li><a href="#!" class="footer__link-item">Marketplace</a></li>
+                    <li><a href="#!" class="footer__link-item">Features</a></li>
+                    <li><a href="#!" class="footer__link-item">Integrations</a></li>
+                </ul>
+    
+                <ul class="footer__links">
+                    <li><h3 class="footer__subtitle">Company</h3></li>
+                    <li><a href="#!" class="footer__link-item">About</a></li>
+                    <li><a href="#!" class="footer__link-item">Team</a></li>
+                    <li><a href="#!" class="footer__link-item">Blog</a></li>
+                    <li><a href="#!" class="footer__link-item">Careers</a></li>
+                </ul>
+    
+                <ul class="footer__links">
+                    <li><h3 class="footer__subtitle">Connect</h3></li>
+                    <li><a href="#!" class="footer__link-item">Contact</a></li>
+                    <li><a href="#!" class="footer__link-item">Newsletter</a></li>
+                    <li><a href="#!" class="footer__link-item">LinkedIn</a></li>
+                </ul>
+            </div>
         </footer>
 
         <script src="./js/script.js"></script>
