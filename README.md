@@ -20,7 +20,9 @@
 <br>
 
 <h2 id="img">📺 Imagem do projeto</h2>
-(projeto em andamento)
+<p align="center">
+  <img src=".github/preview.jpg" alt="interface Blogr">
+</p>
 
 <br>
 
@@ -42,13 +44,14 @@ Clique [aqui](https://fel1324.github.io/blogr-challenge/) para acessar o projeto
 <h2 id="tec">🛠️ Tecnologias utilizadas</h2>
 
 * HTML e CSS
+* Javascript
 * Git e Github
 
 <br>
 
 <h2 id="status">🏗️ Status do projeto</h2>
 
-🚧 Projeto em desevolvimento... 🚧
+✔️ Projeto Finalizado :)
 
 <br>
 
