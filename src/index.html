@@ -30,23 +30,35 @@
                     </li>
 
                     <li class="navbar-desktop__item">
-                        <button class="navbar-desktop__button" aria-label="Open Product">
+                        <button class="navbar-desktop__button" aria-label="Open Product" onclick="openFirstListDesktop()">
                             Product
-                            <span><img src="assets/images/icon-arrow-light.svg" alt=""></span>
+                            <span class="navbar-desktop__arrow-1"><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
+
+                        <ul class="navbar__first-list--desktop">
+                            <li class="navbar-desktop__first-item"><a href="#" class="navbar-desktop__first-link">Contact</a></li>
+                            <li class="navbar-desktop__first-item"><a href="#" class="navbar-desktop__first-link">Newsletter</a></li>
+                            <li class="navbar-desktop__first-item"><a href="#" class="navbar-desktop__first-link">LinkedIn</a></li>
+                        </ul>
                     </li>
 
                     <li class="navbar-desktop__item">
-                        <button class="navbar-desktop__button" aria-label="Open Company">
+                        <button class="navbar-desktop__button" aria-label="Open Company" onclick="openSecondListDesktop()">
                             Company
-                            <span><img src="assets/images/icon-arrow-light.svg" alt=""></span>
+                            <span class="navbar-desktop__arrow-2"><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
+
+                        <ul class="navbar__second-list--desktop">
+                            <li class="navbar-desktop__second-item"><a href="#" class="navbar-desktop__second-link">Contact</a></li>
+                            <li class="navbar-desktop__second-item"><a href="#" class="navbar-desktop__second-link">Newsletter</a></li>
+                            <li class="navbar-desktop__second-item"><a href="#" class="navbar-desktop__second-link">LinkedIn</a></li>
+                        </ul>
                     </li>
 
                     <li class="navbar-desktop__item">
                         <button class="navbar-desktop__button" aria-label="Open Connect" onclick="openThirdListDesktop()">
                             Connect
-                            <span class="navbar-desktop__arrow"><img src="assets/images/icon-arrow-light.svg" alt=""></span>
+                            <span class="navbar-desktop__arrow-3"><img src="assets/images/icon-arrow-light.svg" alt=""></span>
                         </button>
 
                         <ul class="navbar__third-list--desktop">
@@ -94,23 +106,35 @@
                 <nav class="menu-lateral__navbar">
                     <ul class="menu-lateral__lista">
                         <li class="menu-lateral__item">
-                            <button class="menu-lateral__button">
+                            <button onclick="openFirstList()" class="menu-lateral__button" aria-label="Open Company">
                                 Product
-                                <span><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                                <span class="menu-lateral__arrow-1"><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
                             </button>
+
+                            <ul class="navbar__first-list">
+                                <li class="navbar__first-item"><a href="#" class="navbar__first-link">Contact</a></li>
+                                <li class="navbar__first-item"><a href="#" class="navbar__first-link">Newsletter</a></li>
+                                <li class="navbar__first-item"><a href="#" class="navbar__first-link">LinkedIn</a></li>
+                            </ul>
                         </li>
 
                         <li class="menu-lateral__item">
-                            <button class="menu-lateral__button">
+                            <button onclick="openSecondList()" class="menu-lateral__button" aria-label="Open Company">
                                 Company
-                                <span><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                                <span class="menu-lateral__arrow-2"><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
                             </button>
+
+                            <ul class="navbar__second-list">
+                                <li class="navbar__second-item"><a href="#" class="navbar__second-link">Contact</a></li>
+                                <li class="navbar__second-item"><a href="#" class="navbar__second-link">Newsletter</a></li>
+                                <li class="navbar__second-item"><a href="#" class="navbar__second-link">LinkedIn</a></li>
+                            </ul>
                         </li>
 
                         <li class="menu-lateral__item">
                             <button onclick="openThirdList()" class="menu-lateral__button" aria-label="Open Connect">
                                 Connect
-                                <span class="menu-lateral__arrow"><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
+                                <span class="menu-lateral__arrow-3"><img src="assets/images/icon-arrow-dark.svg" alt=""></span>
                             </button>
 
                             <ul class="navbar__third-list">
