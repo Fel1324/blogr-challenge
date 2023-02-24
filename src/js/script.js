@@ -25,16 +25,34 @@ function closeMenu(){
 function openThirdList(){
     document.querySelector('ul.navbar__third-list').classList.toggle('third-list--open');
     document.querySelector('span.menu-lateral__arrow-3').classList.toggle('rotate');
+
+    document.querySelector('ul.navbar__first-list').classList.remove('first-list--open');
+    document.querySelector('span.menu-lateral__arrow-1').classList.remove('rotate');
+
+    document.querySelector('ul.navbar__second-list').classList.remove('second-list--open');
+    document.querySelector('span.menu-lateral__arrow-2').classList.remove('rotate');
 }
 
 function openSecondList(){
     document.querySelector('ul.navbar__second-list').classList.toggle('second-list--open');
     document.querySelector('span.menu-lateral__arrow-2').classList.toggle('rotate');
+
+    document.querySelector('ul.navbar__first-list').classList.remove('first-list--open');
+    document.querySelector('span.menu-lateral__arrow-1').classList.remove('rotate');
+
+    document.querySelector('ul.navbar__third-list').classList.remove('third-list--open');
+    document.querySelector('span.menu-lateral__arrow-3').classList.remove('rotate');
 }
 
 function openFirstList(){
     document.querySelector('ul.navbar__first-list').classList.toggle('first-list--open');
     document.querySelector('span.menu-lateral__arrow-1').classList.toggle('rotate');
+
+    document.querySelector('ul.navbar__second-list').classList.remove('second-list--open');
+    document.querySelector('span.menu-lateral__arrow-2').classList.remove('rotate');
+
+    document.querySelector('ul.navbar__third-list').classList.remove('third-list--open');
+    document.querySelector('span.menu-lateral__arrow-3').classList.remove('rotate');
 }
 
 // LISTAS DESKTOP
